@@ -59,7 +59,6 @@ stdenvNoCC.mkDerivation rec {
           "sha256-GTVoxk7wchTiJqCRJkspLJGXwKD92+ZYT7UBWMhONkQ=";
       };
     };
-    };
     updateScript = pkgs.writeShellScript "update-bun" ''
       set -o errexit
       export PATH="${lib.makeBinPath [ pkgs.curl pkgs.jq pkgs.common-updater-scripts ]}"
