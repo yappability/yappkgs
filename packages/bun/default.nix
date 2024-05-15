@@ -1,6 +1,6 @@
 { stdenvNoCC, lib, pkgs, ... }:
 stdenvNoCC.mkDerivation rec {
-  version = "1.1.4";
+  version = "1.1.8";
   pname = "bun";
 
   src = passthru.sources.${stdenvNoCC.hostPlatform.system} or (throw
